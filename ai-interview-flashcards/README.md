@@ -41,7 +41,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='[http://i.imgur.com/link/to/your/gif/file.gif](https://github.com/user-attachments/assets/2f66aac8-af6f-479c-91be-9d47955b86d2' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='![Screen Recording 2026-03-08 at 10 23 44 PM](https://github.com/user-attachments/assets/ea7d7ad1-b7d0-41e4-9c63-d6086e945f72)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Notes
