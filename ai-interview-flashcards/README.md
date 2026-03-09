@@ -42,8 +42,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 
-<img src='![Screen Recording 2026-03-08 at 10 23 44 PM](https://github.com/user-attachments/assets/ea7d7ad1-b7d0-41e4-9c63-d6086e945f72)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+![Screen Recording 2026-03-08 at 10 23 44 PM](https://github.com/user-attachments/assets/ea7d7ad1-b7d0-41e4-9c63-d6086e945f72)
 
 ## Notes
 
