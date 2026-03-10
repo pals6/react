@@ -36,13 +36,6 @@ Here's a walkthrough of implemented required features:
 
 ![Screen Recording 2026-03-02 at 7 17 25 PM](https://github.com/user-attachments/assets/5aaa978c-4a98-4a22-bb34-f67f85c6a954)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
 
 
 ## License
