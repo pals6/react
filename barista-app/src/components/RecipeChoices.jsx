@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const RecipeChoices = ({ handleChange, label, choices, checked }) => {
     return (
       <div className="radio-buttons">
@@ -7,12 +5,12 @@ const RecipeChoices = ({ handleChange, label, choices, checked }) => {
     choices.map((choice) => (
       <li key={choice}>
         <input
-          id={choice}
+          id={`${label}-${choice}`}
           value={choice}
           name={label}
           type="radio"
           onChange={handleChange}
-          checked={checked == choice}
+          checked={checked === choice}
         />
           {choice}
       </li>
