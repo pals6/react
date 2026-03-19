@@ -1,52 +1,59 @@
-# Web Development Project 2 - *AI Interview Flashcards*
+# Web Development Project 3 - *AI Interview Flashcards*
 
 Submitted by: **Pallavi Bichpuriya**
 
-This web app: **Practice AI, ML, and CS concepts using flashcards.**
+This web app: **helps users practice AI, machine learning, and computer science concepts by guessing answers before flipping through an ordered set of flashcards.**
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
+- [x] **The user can enter their guess into an input box *before* seeing the flipside of the card**
+  - [x] Application features a clearly labeled input box with a submit button where users can type in a guess
+  - [x] Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong
+  - [x] Clicking on the submit button with a **correct** answer shows visual feedback that it is correct
+- [x] **The user can navigate through an ordered list of cards**
+  - [x] A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
+  - [x] A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
+  - [x] Both the next and back buttons have visual indication when the user is at the beginning or end of the list, preventing wrap-around navigation
 
-- [x] **The app displays the title of the card set, a short description, and the total number of cards**
-  - [x] Title of card set is displayed 
-  - [x] A short description of the card set is displayed 
-  - [x] A list of card pairs is created
-  - [x] The total number of cards in the set is displayed 
-  - [x] Card set is represented as a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine)
-- [x] **A single card at a time is displayed**
-  - [x] Only one half of the information pair is displayed at a time
-- [x] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
-  - [x] Clicking on a card flips it over, showing the back with corresponding information 
-  - [x] Clicking on a flipped card again flips it back, showing the front
-- [x] **Clicking on the next button displays a random new card**
+## Optional Features
 
 The following **optional** features are implemented:
 
-- [ ] Cards contain images in addition to or in place of text
-  - [ ] Some or all cards have images in place of or in addition to text
-- [ ] Cards have different visual styles such as color based on their category
-  - Example categories you can use:
-    - Difficulty: Easy/medium/hard
-    - Subject: Biology/Chemistry/Physics/Earth science
+- [ ] Users can use a shuffle button to randomize the order of the cards
+  - [ ] Cards remain in the same sequence unless the shuffle button is clicked
+  - [ ] Cards change to a random sequence once the shuffle button is clicked
+- [x] A user’s answer may be counted as correct even when it is slightly different from the target answer
+  - [x] Answers are normalized to ignore uppercase/lowercase differences and punctuation
+  - [x] Some cards accept shorter equivalent phrasing instead of requiring one exact full sentence
+- [ ] A counter displays the user’s current and longest streak of correct responses
+  - [ ] The current counter increments when a user guesses an answer correctly
+  - [ ] The current counter resets to 0 when a user guesses an answer incorrectly
+  - [ ] A separate counter tracks the longest streak, updating if the current streak exceeds it
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of displayed cards
+  - [ ] The user can mark a card to indicate that it has been mastered
+  - [ ] Mastered cards are removed from the pool of displayed cards and added to a list of mastered cards
+
+## Additional Features
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+- [x] The flashcard stays locked until a guess is submitted, guiding the Project 3 flow
+- [x] The app shows the current card position with a `Card X of Y` progress indicator
+- [x] The flashcard supports keyboard interaction for accessibility
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
-
-![Screen Recording 2026-03-08 at 10 23 44 PM](https://github.com/user-attachments/assets/ea7d7ad1-b7d0-41e4-9c63-d6086e945f72)
+Add your updated Project 3 GIF here once you record it.
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One challenge was deciding how strict answer checking should be. I wanted the app to accept reasonable variations without making validation so loose that unrelated guesses counted as correct. Another small challenge was resetting the guess, feedback, and flipped state cleanly whenever the user moved between cards.
 
 ## License
 

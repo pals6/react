@@ -56,7 +56,14 @@ p {
   gap: 18px;
 }
 
-.cards-section > p {
+.cards-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cards-meta p {
   padding: 8px 14px;
   border: 1px solid rgba(16, 32, 57, 0.08);
   border-radius: 999px;
@@ -75,8 +82,10 @@ p {
   border-radius: 18px;
   box-shadow: var(--shadow-soft);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -97,6 +106,62 @@ p {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 700;
   line-height: 1.45;
+}
+
+.flashcard-hint {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--accent-dark);
+}
+
+.flashcard-locked {
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+.flashcard-locked:hover {
+  transform: none;
+  box-shadow: var(--shadow-soft);
+  border-color: #d7e6f2;
+}
+
+.guess-form {
+  width: min(100%, 560px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.guess-label {
+  color: #1d3855;
+  font-weight: 700;
+}
+
+.guess-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.guess-input {
+  flex: 1;
+  border: 1px solid #bfd8eb;
+  border-radius: 14px;
+  padding: 12px 16px;
+  font: inherit;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.guess-input::placeholder {
+  color: #6e8399;
+}
+
+.guess-input:focus-visible {
+  outline: 3px solid rgba(15, 127, 143, 0.22);
+  outline-offset: 1px;
+  border-color: var(--accent);
 }
 
 button {
@@ -126,6 +191,50 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+.feedback-message {
+  min-height: 48px;
+  width: min(100%, 560px);
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+}
+
+.feedback-message.pending {
+  color: #38506c;
+  border-color: rgba(16, 32, 57, 0.08);
+}
+
+.feedback-message.correct {
+  color: #0d5b41;
+  border-color: rgba(13, 91, 65, 0.18);
+  background: rgba(226, 247, 238, 0.96);
+}
+
+.feedback-message.incorrect {
+  color: #8c2d3f;
+  border-color: rgba(140, 45, 63, 0.18);
+  background: rgba(255, 235, 239, 0.96);
+}
+
+.card-navigation {
+  width: min(100%, 420px);
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.52;
+  filter: grayscale(0.15);
+}
+
+button:disabled:active {
+  transform: none;
+}
+
 @media (max-width: 600px) {
   #root > div {
     padding: 36px 14px 24px;
@@ -140,6 +249,12 @@ button:focus-visible {
   button {
     width: 100%;
     max-width: 260px;
+  }
+
+  .guess-controls,
+  .card-navigation {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
