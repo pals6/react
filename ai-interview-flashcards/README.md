@@ -19,6 +19,9 @@ The following **required** functionality is completed:
   - [x] A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
   - [x] Both the next and back buttons have visual indication when the user is at the beginning or end of the list, preventing wrap-around navigation
 
+
+
+
 ## Optional Features
 
 The following **optional** features are implemented:
@@ -49,7 +52,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-Add your updated Project 3 GIF here once you record it.
+https://github.com/user-attachments/assets/0a95c297-a273-4a0b-9dd5-2742b0ca6daa
 
 ## Notes
 
