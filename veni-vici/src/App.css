@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d1a;
+  color: white;
+  text-align: center;
+}
+
+.app {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #ccc;
+}
+
+.dog-card {
+  margin-top: 20px;
+}
+
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.attributes button {
+  background-color: #2e2e4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.attributes button:hover {
+  background-color: #5555aa;
+}
+
+img {
+  margin-top: 15px;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5146d8;
+}
+
+.ban-list {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #444;
+}
+
+.ban-list button {
+  margin: 5px;
+  background-color: #ff6b6b;
+}
+
+.ban-list button:hover {
+  background-color: #ff4c4c;
+}
