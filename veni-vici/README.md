@@ -1,16 +1,79 @@
-# React + Vite
+# Web Development Project 4 - *Veni Vici!*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Pallavi Bichpuriya**
 
-Currently, two official plugins are available:
+This web app: **A React-based dog discovery app that uses The Dog API to display one random dog breed at a time along with its image and matching attributes. Users can click attribute tags to add them to a ban list, which prevents future results with those banned values from appearing.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Time spent: **2** hours spent in total
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following **required** functionality is completed:
 
-## Expanding the ESLint configuration
+- [x] **Application features a button that creates a new API fetch request on click and displays at least three attributes and an image obtained from the returned JSON data**
+  - The type of attribute displayed for each image is consistent across API calls
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] **Only one item/data from API call response is viewable at a time and at least one image is displayed per API call**
+  - A single result of an API call is displayed at a time
+  - Displayed attributes match the displayed image
+  - There is at least one image per API call
+
+- [x] **API call response results should appear random to the user**
+  - Clicking on the API call button generates a seemingly random new result each time
+  - Repeat results are possible but not frequent
+
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+  - Multiple displayed attributes are clickable
+  - Clicking on a clickable attribute not already in the ban list immediately adds it to the ban list
+  - Clicking on an attribute in the ban list immediately removes it from the ban list
+
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+  - Clicking on the Discover button does not display any future dog whose shown attributes contain a banned value
+  - More banned values may increase the frequency of repeat results
+
+- [x] _To ensure an accurate grade, the recording shows that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes_
+
+## Optional Features
+
+The following **optional** features are implemented:
+
+- [x] Multiple types of attributes are clickable and can be added to the ban list
+- [ ] Users can see a stored history of their previously displayed results from this session
+  - [ ] A dedicated section of the application displays all the previous images/attributes seen before
+  - [ ] Each time the API call button is clicked, the history updates with the newest API result
+
+## Additional Features
+
+The following **additional** features are implemented:
+
+- [x] Normalized ban checking so values with different capitalization or spacing are still filtered correctly
+- [x] Cleaner pill-style attribute buttons and improved layout/styling for a better user experience
+- [x] Safer filtering logic to avoid broken results when some API fields are missing
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with Kap
+
+## Notes
+
+One challenge I encountered was that the image search endpoint in The Dog API often returned images without breed metadata, even when using parameters meant to filter for breeds. Because of that, I switched to the breeds endpoint and selected a random breed from there instead. Another challenge was making sure banned traits were actually filtered correctly, since values could differ slightly in capitalization or spacing. I fixed that by normalizing values before comparing them.
+
+## License
+
+    Copyright [2026] [Pallavi Bichpuriya]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
