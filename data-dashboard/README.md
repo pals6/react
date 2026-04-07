@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/bde1ed46-d505-42f8-9fc5-5079013c81e3
 # Web Development Project 5 - New York Breweries Dashboard
 
 Submitted by: **Pallavi Bichpuriya**
@@ -48,10 +50,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with your actual GIF link -->
-GIF created with ...
+
+
+https://github.com/user-attachments/assets/413d4f2f-e3ee-4534-92e4-e0b06c29172e
+
+
+
+
 
 ## Notes
 
