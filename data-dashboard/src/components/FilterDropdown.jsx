@@ -1,18 +1,26 @@
-function FilterDropdown({ selectedType, options, onFilterChange }) {
+function FilterDropdown({
+  controlId,
+  label,
+  selectedValue,
+  options,
+  allLabel,
+  onFilterChange,
+  formatOption = (option) => option,
+}) {
   return (
     <div className="control-card">
-      <label className="control-label" htmlFor="type-filter">
-        Filter by brewery type
+      <label className="control-label" htmlFor={controlId}>
+        {label}
       </label>
       <select
-        id="type-filter"
+        id={controlId}
         className="control-input"
-        value={selectedType}
+        value={selectedValue}
         onChange={(event) => onFilterChange(event.target.value)}
       >
         {options.map((option) => (
           <option key={option} value={option}>
-            {option === "all" ? "All Types" : option}
+            {option === "all" ? allLabel : formatOption(option)}
           </option>
         ))}
       </select>
