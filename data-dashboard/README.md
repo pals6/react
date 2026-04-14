@@ -1,5 +1,4 @@
 
-https://github.com/user-attachments/assets/bde1ed46-d505-42f8-9fc5-5079013c81e3
 # Web Development Project 5 - New York Breweries Dashboard
 
 Submitted by: **Pallavi Bichpuriya**
@@ -55,8 +54,15 @@ Here's a walkthrough of implemented user stories:
 
 
 
+https://github.com/user-attachments/assets/d2dbe937-e541-4c0e-af4b-f6670af41774
 
-https://github.com/user-attachments/assets/413d4f2f-e3ee-4534-92e4-e0b06c29172e
+
+
+
+
+
+
+
 
 
 
