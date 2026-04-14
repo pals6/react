@@ -1,48 +1,51 @@
-# Web Development Project 5 - New York Breweries Dashboard
+# Web Development Project 6 - New York Breweries Dashboard
 
 Submitted by: **Pallavi Bichpuriya**
 
-This web app: **A React dashboard that fetches brewery data from the Open Brewery DB API and helps users explore New York breweries with summary stats, live search, and category filtering.**
+This web app: **A React dashboard for exploring New York breweries with live filters, custom SVG charts, and direct detail pages for each brewery while keeping a persistent sidebar visible across views.**
 
-Time spent: **2** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard displays at least 10 unique items, one per card
-  - Each brewery card includes at least two features, including brewery type, city, state, phone number, and website availability
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data**
-  - Total breweries currently shown
-  - Average number of breweries per city in the current filtered results
-  - Most common brewery type in the current filtered results
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar filters breweries by name or city
-  - The results update dynamically as the user types
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter uses brewery type, which is different from the search bar
-  - The results update dynamically as the selected type changes
+- [x] **Clicking on an item in the list view displays more details about it**
+  - Clicking on a brewery card in the dashboard list navigates to a detail view for that brewery
+  - The detail view includes extra information not shown on the dashboard cards, such as the direct detail URL, full address, country, coordinates, and city/type comparison counts
+  - The same sidebar remains visible in the detail view as in the dashboard view
+  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  - Each brewery detail view uses its own hash-based URL such as `#/brewery/<id>`
+  - *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - A bar chart shows which cities have the highest brewery concentration in the current filtered view
+  - A donut chart shows how brewery types are distributed in the current filtered view
 
 ## Optional Features
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types
-  - A text input is used for search
-  - A dropdown is used for brewery type filtering
-- [ ] The user can enter specific bounds for filter values
+- [x] The site’s customized dashboard contains more content that explains what is interesting about the data
+  - The app includes a "What This Snapshot Shows" panel that summarizes the current filtered results in plain English
+  - The dashboard headings and chart annotations explain what each visualization is showing
+- [x] The site allows users to toggle between different data visualizations
+  - Buttons let the user show or hide the city chart and brewery type chart independently
 
 ## Additional Features
 
 The following **additional** features are implemented:
 
-- [x] A dynamic "What This Snapshot Shows" insight panel summarizes the current filtered data in plain English
-- [x] Loading and error states are displayed while the API request is in progress or if it fails
-- [x] Brewery cards include external website links when available
-- [x] Responsive card layout with simple custom styling
+- [x] Search by brewery name or city with live updates
+- [x] Multiple filters can be applied at the same time
+- [x] Dropdown filters for brewery type and city
+- [x] ZIP-code bounds filter using number inputs
+- [x] Summary cards for breweries shown, cities represented, website links, and most common brewery type
+- [x] Loading and error states for the API request
+- [x] Custom SVG charts were built without using a charting library
+- [x] Responsive split layout keeps the sidebar visible on larger screens and stacks cleanly on mobile
+- [x] Detail pages include direct links to the brewery website and a Google Maps lookup
+- [x] A back-to-dashboard action makes it easy to return from a detail page to the dashboard view
 
 ## Video Walkthrough
 
@@ -50,25 +53,29 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with your actual GIF link -->
+<!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
-One challenge was turning raw API data into a dashboard that felt more meaningful than just a list of results. I addressed that by adding summary statistics, combining search and dropdown filtering, and including a short insight panel that explains what the current filtered view shows. Another small challenge was handling missing API fields gracefully so the app would still render cleanly even when some breweries did not have a phone number or website listed.
+One challenge was extending a simple filtered dashboard into a multi-view app without pulling in a routing library. I handled that by using hash-based URLs so each brewery still has a direct link while the sidebar remains visible across both the dashboard and detail views. Another challenge was adding charts without a chart package, so I built custom SVG bar and donut charts directly from the fetched API data and added toggles so each visualization can be shown or hidden independently.
 
 ## License
 
-Copyright 2026 Pallavi Bichpuriya
+    Copyright 2026 Pallavi Bichpuriya
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
