@@ -100,15 +100,8 @@ npm run dev
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+https://github.com/user-attachments/assets/8b2e2ff5-6c6d-4a2e-9e0a-ac997daaa9f9
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
