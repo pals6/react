@@ -100,6 +100,7 @@ npm run dev
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
 https://github.com/user-attachments/assets/8b2e2ff5-6c6d-4a2e-9e0a-ac997daaa9f9
 
 
