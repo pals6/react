@@ -4,7 +4,7 @@ Submitted by: **Pallavi Bichpuriya**
 
 This web app: **is a hobby-focused discussion forum where users can create posts, browse a searchable and sortable feed, open dedicated post pages, leave comments, upvote threads, and edit or delete their posts.**
 
-Time spent: **TBD** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
@@ -53,14 +53,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='REPLACE_WITH_YOUR_GIF_LINK' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+https://github.com/user-attachments/assets/f168b5d4-ab41-4d8a-a0ba-53e59ee00c57
+
+
 
 ## Notes
 
